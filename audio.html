@@ -1,0 +1,7 @@
+<div class="container">
+<audio controls>
+        <source src="{{ .Get `src` }}" type="audio/mp3">
+        {{ if $.Page.Params.ogg }}<source src="{{ $.Page.Params.ogg }}" type="audio/ogg">{{end}}
+        Sorry, your browser does not support the <code>audio</code> element.
+</audio><br>
+</div>
