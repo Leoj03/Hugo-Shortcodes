@@ -4,9 +4,16 @@ date: 2018-08-14T15:04:40-05:00
 draft: true
 ---
 
-Audio shortcode test:
+Audio shortcode testing.
 
-{{< audio src="Test.mp3">}}
+MP3:
+{{< audio src="piano.mp3">}}
+
+WAV:
+{{< audio src="piano.wav">}}
+
+OGG:
+{{< audio src="piano.ogg">}}
 
 `figure` shortcode test:
 
