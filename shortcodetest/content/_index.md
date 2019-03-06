@@ -12,7 +12,7 @@ MP3:
 WAV:
 {{< audio src="piano.wav">}}
 
-OGG:
+Ogg Vorbis:
 {{< audio src="piano.ogg">}}
 
 `figure` shortcode test:
