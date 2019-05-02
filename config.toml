@@ -1,0 +1,153 @@
+baseurl                 = "https://karlbickerstaff.netlify.com"
+DefaultContentLanguage  = "en"
+title                   = "Bickerstaff Productions"
+theme                   = "hugo-future-imperfect-slim"
+preserveTaxonomyNames   = true
+paginate                = 3
+disqusShortname         = "karl-bickerstaff"
+googleAnalytics         = ""
+pluralizeListTitles     = false
+disableLanguages        = [""]
+
+[params]
+  # Loads CSS and JavaScript files. The variable is an array so that you can load
+  # multiple/additional files if necessary. The standard theme files can be loaded
+  # by adding the value, "default". Default includes the add-on.css and and-on.js.
+  # Example: ["default", "/path/to/file"]
+  cssFiles              = ["default"]
+  jsFiles               = ["default"]
+  # Sets options for highlight.js
+  highlightjs           = true
+  highlightjsTheme      = "github"
+  highlightjsLang       = ["html", "css", "js", "toml"]
+  # Sets where "View More Posts" links to
+  viewMorePostsLink     = "/blog/"
+  # Activate Estimated Reading Times, which appear in the post headers
+  readingTime           = true
+  # Sets which Social Share links appear in posts.
+  # Options are twitter, facebook, reddit, linkedin, stumbleupon, pinterest, email
+  socialShare           = ["twitter", "facebook", "reddit", "linkedin",
+                          "stumbleupon", "pinterest", "email"]
+
+  [params.meta]
+    # Sets the meta tag description
+    description         = "The website of Karl Bickerstaff, author"
+    # Sets the meta tag author
+    author              = "Karl Bickerstaff"
+    # If you would like to add more comprehensive favicon support passed root
+    # directory favicon.ico, utlize this funtion. It is recommened to use
+    # https://realfavicongenerator.net to generate your icons as that is the basis
+    # for the theme's naming.
+    favicon             = false
+    svg                 = true
+    faviconVersion      = "1"
+    msColor             = "#ffffff" # Copy from the https://realfavicongenerator.net
+    iOSColor            = "#ffffff" # Copy from the https://realfavicongenerator.net
+
+  [params.header]
+    # Sets the navbarTitle that appears in the top left of the navigation bar
+    navbarTitle         = "Bickerstaff Productions"
+    # Sets navbarTitle to match the section of the website
+    dynamicTitles       = true
+    searchMenu          = true
+    shareMenu           = true
+    languageMenu        = false
+
+  # These are optional params related to the sidebar. They are recommended, but not
+  # required for proper functionality. HTML is supported within the params.
+  [params.intro]
+    header                = "Karl Bickerstaff"
+    paragraph             = "Writer, thinker, consumer of chocolate."
+    rssIntro              = true
+    socialIntro           = true
+
+    # This appears at the top of the sidebar above params.intro.header.
+    # A width of less than 100px is recommended from a design perspective.
+    [params.intro.pic]
+      src                 = "/img/main/logo.jpg"
+      # Masks image in a certain shape. Supported are circle, triangle, diamond, and hexagon.
+      shape               = "circle"
+      width               = ""
+      alt                 = "Karl Bickerstaff"
+
+  [params.sidebar]
+    about               = "The Life and Times of Karl Bickerstaff"
+    # Sets the number of recent posts to show in the sidebar. The default value is 5.
+    postAmount          = 5
+    # set to show or to hide categories in the sidebar
+    categories          = true
+    # Sets Categories to sort by number of posts instead of alphabetical
+    categoriesByCount   = true
+
+  [params.footer]
+    # Sets RSS icons to appear on the sidebar with the social media buttons
+    rssFooter           = true
+    # Sets Social Media icons to appear on the sidebar
+    socialFooter        = true
+
+  # Disqus will take priority over Staticman (github.com/eduardoboucas/staticman)
+  # due to its ease of use. Feel free to check out both and decide which you would
+  # prefer to use. See Staticman.yml for additional settings.
+  [params.staticman]
+    # Sets Statiman to be active
+    staticman           = false
+    # Sets the location for Staticman to connect to
+    username            = ""
+    repo                = ""
+    branch              = ""
+
+    [params.staticman.recaptcha]
+      recaptcha         = false
+      siteKey           = "" # Site Key
+      encryptedKey      = ""
+
+[menu]
+  # Sets the menu items in the navigation bar
+  # Identifier prepends a Font Awesome icon to the menu item
+  [[menu.main]]
+    name              = "Home"
+    url               = "/"
+    identifier        = "fas fa-home"
+    weight            = 1
+
+  [[menu.main]]
+    name              = "About"
+    url               = "/about/"
+    identifier        = "far fa-id-card"
+    weight            = 2
+
+  [[menu.main]]
+    name              = "Blog"
+    url               = "/blog/"
+    identifier        = "far fa-newspaper"
+    weight            = 3
+
+  [[menu.main]]
+    name              = "Categories"
+    url               = "/categories/"
+    identifier        = "fas fa-sitemap"
+    weight            = 5
+
+  [[menu.main]]
+    name              = "Contact"
+    url               = "/contact/"
+    identifier        = "far fa-envelope"
+    weight            = 6
+
+#[Languages]
+#  # Each language has its own menu.
+#  [Languages.en]
+#    languageCode        = "en"
+#    LanguageName        = "English"
+#    weight              = 1
+
+  
+
+# Sets Social Media icons to appear and link to your account. Value should be your
+# username unless otherwise noted. These are the icons affected by socialAppearAtTop
+# and socialAppearAtBottom.
+
+#[social]
+
+  # Email
+  #email                 = "leoj03@vivaldi.net"
